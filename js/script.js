@@ -1,9 +1,9 @@
 function playGame(playerInput) {
 
     clearMessages();
-    let stone = 'kamień';
-    let paper = 'papier';
-    let scissors = 'nożyce';
+    const stone = 'kamień';
+    const paper = 'papier';
+    const scissors = 'nożyce';
 
     function getMoveName(argMoveId) {
         if (argMoveId == 1) {
@@ -17,13 +17,13 @@ function playGame(playerInput) {
         return 'nieznany ruch';
     }
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
     printMessage('Mój ruch to: ' + computerMove);
 
-    let playerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
 
     printMessage('Twój ruch to: ' + playerMove);
 
